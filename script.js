@@ -81,8 +81,22 @@ const container = React.createElement(
           style: {},
         },
         [
-            React.createElement("label", { key: 1, id: "label", htmlFor:'username' }, 'User Name'),
-            React.createElement("input", { key: 2, id: "username" })
+          React.createElement("div", { className: "inputContainer", key:'1' }, [
+            React.createElement(
+              "label",
+              { key: 1, id: "label", htmlFor: "username" },
+              "User Name"
+            ),
+            React.createElement("input", { key: 2, id: "username" }),
+          ]),
+          React.createElement("div", { className: "inputContainer", key:'2' }, [
+            React.createElement(
+              "label",
+              { key: 1, id: "pwd", htmlFor: "password",  },
+              "Password"
+            ),
+            React.createElement("input", { key: 2, id: "password", type:'password'  }),
+          ]),
         ]
       ),
     ]),
