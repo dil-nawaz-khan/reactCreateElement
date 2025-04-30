@@ -1,0 +1,28 @@
+{
+  "name": "reactcreateelement",
+  "version": "1.0.0",
+  "main": "React.js",
+  "scripts": {
+    "build": "babel ./script.js -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dil-nawaz-khan/reactCreateElement.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dil-nawaz-khan/reactCreateElement/issues"
+  },
+  "homepage": "https://github.com/dil-nawaz-khan/reactCreateElement#readme",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.27.1",
+    "@babel/core": "^7.27.1",
+    "preset-react": "^1.0.0"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.27.1"
+  }
+}
