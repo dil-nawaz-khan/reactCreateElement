@@ -56,16 +56,37 @@
 const container = React.createElement(
   "div",
   { className: "container", id: "container" },
-
-  React.createElement(
-    "section",
-    { className: "s1" },
-    React.createElement(
-      "p",
-      { className: "p1" },
-      "The library for web and native user interfaces"
-    )
-  )
+  [
+    React.createElement("section", { key: 1, className: "s1" }, [
+      React.createElement(
+        "p",
+        { key: 1, className: "p1" },
+        "The library for web and native user interfaces"
+      ),
+      React.createElement("img", {
+        key: 2,
+        className: "img1",
+        style: {
+          width: 100,
+          backgroundColor: "teal",
+          borderRadius: 16,
+        },
+        src: "https://picsum.photos/200/300",
+      }),
+      React.createElement(
+        "form",
+        {
+          key: 3,
+          className: "img1",
+          style: {},
+        },
+        [
+            React.createElement("label", { key: 1, id: "label", htmlFor:'username' }, 'User Name'),
+            React.createElement("input", { key: 2, id: "username" })
+        ]
+      ),
+    ]),
+  ]
 );
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
