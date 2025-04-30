@@ -53,55 +53,76 @@
 //     }
 // })
 
-const container = React.createElement(
-  "div",
-  { className: "container", id: "container" },
-  [
-    React.createElement("section", { key: 1, className: "s1" }, [
-      React.createElement(
-        "p",
-        { key: 1, className: "p1" },
-        "The library for web and native user interfaces"
-      ),
-      React.createElement("img", {
-        key: 2,
-        className: "img1",
-        style: {
-          width: 100,
-          backgroundColor: "teal",
-          borderRadius: 16,
-        },
-        src: "https://picsum.photos/200/300",
-      }),
-      React.createElement(
-        "form",
-        {
-          key: 3,
-          className: "img1",
-          style: {},
-        },
-        [
-          React.createElement("div", { className: "inputContainer", key:'1' }, [
-            React.createElement(
-              "label",
-              { key: 1, id: "label", htmlFor: "username" },
-              "User Name"
-            ),
-            React.createElement("input", { key: 2, id: "username" }),
-          ]),
-          React.createElement("div", { className: "inputContainer", key:'2' }, [
-            React.createElement(
-              "label",
-              { key: 1, id: "pwd", htmlFor: "password",  },
-              "Password"
-            ),
-            React.createElement("input", { key: 2, id: "password", type:'password'  }),
-          ]),
-        ]
-      ),
-    ]),
-  ]
-);
-const root = ReactDOM.createRoot(document.querySelector("#root"));
+// const container = React.createElement(
+//   "div",
+//   { className: "container", id: "container" },
+//   [
+//     React.createElement("section", { key: 1, className: "s1" }, [
+//       React.createElement(
+//         "p",
+//         { key: 1, className: "p1" },
+//         "The library for web and native user interfaces"
+//       ),
+//       React.createElement("img", {
+//         key: 2,
+//         className: "img1",
+//         style: {
+//           width: 100,
+//           backgroundColor: "teal",
+//           borderRadius: 16,
+//         },
+//         src: "https://picsum.photos/200/300",
+//       }),
+//       React.createElement(
+//         "form",
+//         {
+//           key: 3,
+//           className: "img1",
+//           style: {},
+//         },
+//         [
+//           React.createElement("div", { className: "inputContainer", key:'1' }, [
+//             React.createElement(
+//               "label",
+//               { key: 1, id: "label", htmlFor: "username" },
+//               "User Name"
+//             ),
+//             React.createElement("input", { key: 2, id: "username" }),
+//           ]),
+//           React.createElement("div", { className: "inputContainer", key:'2' }, [
+//             React.createElement(
+//               "label",
+//               { key: 1, id: "pwd", htmlFor: "password",  },
+//               "Password"
+//             ),
+//             React.createElement("input", { key: 2, id: "password", type:'password'  }),
+//           ]),
+//         ]
+//       ),
+//     ]),
+//   ]
+// );
 
+const h2 = <h2>Hello Babel</h2>
+const container =  <div className="container" id="container">
+<section className="s1">
+  <p className="p1">The library for web and native user interfaces</p>
+  <img
+    className="img1"
+    src="https://picsum.photos/200/300"
+    style={{width: '100px', backgroundColor: 'teal', borderRadius: '16px'}}/>
+  <form className="img1">
+    <div className="inputContainer">
+      <label id="label" htmlFor="username">User Name</label>
+      <input id="username" />
+    </div>
+    <div className="inputContainer">
+      <label id="pwd" htmlFor="password">Password</label>
+      <input id="password" type="password" />
+    </div>
+  </form>
+</section>
+</div>
+
+const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(container);
