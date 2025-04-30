@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "React.js",
   "scripts": {
-    "build": "babel ./script.js -d lib --source-maps"
+    "build": "babel ./script.js -d lib --watch"
   },
   "repository": {
     "type": "git",

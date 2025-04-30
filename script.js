@@ -110,7 +110,7 @@ const container =  <div className="container" id="container">
   <img
     className="img1"
     src="https://picsum.photos/200/300"
-    style={{width: '100px', backgroundColor: 'teal', borderRadius: '16px'}}/>
+    style={{width: '300px', backgroundColor: 'teal', borderRadius: '16px'}}/>
   <form className="img1">
     <div className="inputContainer">
       <label id="label" htmlFor="username">User Name</label>
@@ -123,6 +123,8 @@ const container =  <div className="container" id="container">
   </form>
 </section>
 </div>
+
+console.log(h2);
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(container);
